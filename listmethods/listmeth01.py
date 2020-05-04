@@ -10,3 +10,6 @@ proto.extend(proto2) # pass proto2 as an argument to the extend method
 print(proto)
 protoa.append(proto2) # pass proto2 as an argument to the append method
 print(protoa)
+
+protoa.reverse()
+print(protoa)
