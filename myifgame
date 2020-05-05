@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+X= 0
+answer = " "
+
+while X < 3 :
+  X += 1 
+    answer = input('Choose the Correct Rush Album: \n 1. 1984 \n 2. Out Of Exile \n 3.Above \n 4. 2121')
+    if answer  == "4":  
+        print("Correct!")
+    elif round == 3:    # logic to ensure round has not yet reached 3
+        print("Sorry, the answer was 4.")
+
