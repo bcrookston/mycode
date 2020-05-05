@@ -8,7 +8,7 @@ while round < 3 and answer != "Brian":
     if answer.upper() == "BRIAN" or answer.lower() == "brian":  
         print("Correct!")
         round = 4
-    elif answer.lower() == "shrubbery":
+    elif answer.low( "shrubbery":
         print ("You gave the super secret answer")
         round = 4
     elif round == 3:    # logic to ensure round has not yet reached 3
