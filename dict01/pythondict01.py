@@ -15,7 +15,7 @@ print( "First test - .get()" )
 #print( switch.get("lynx") )
 
 print( "Second test - .get()" )
-#print( switch.get("lynx", "THE KEY IS IN ANOTHER CASTLE!") )
+print( switch.get("lynx", "THE KEY IS IN ANOTHER CASTLE!") )
 
 print( "Third test - .get()" )
 print( switch.get("version") )
