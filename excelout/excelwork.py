@@ -1,5 +1,5 @@
 #!/usr/bin/en
-
+import socket
 ## sudo apt install python3-pip
 
 ## python3 -m pip install pyexcel
@@ -7,12 +7,23 @@
 import pyexcel
 
 # Request data from user
-def get_ip_data():
-    input_ip = input("\nWhat is the IP address? ")
-    input_driver = input("What is the driver associated with this device? ")
-    d = {"IP": input_ip, "driver": input_driver}
-    return d
+x = 0
 
+while x < 0:
+    def get_ip_data():
+        try:
+             input_ip = input("\nWhat is the IP address? ")
+             socket.inet_aton(input_ip)
+   x = 1
+         except:
+             print("Entry was not in the correct Format.")
+
+ input_driver = input("What is the driver associated with this device? ")
+ input_passenger = input("What is your favorite color? ")
+ input_back_seat_driver = input("Why are you back there? ")
+ d = {"IP": input_ip, "driver": input_driver, "passenger": input_passenger, "BackSeat": input_back_seat_driver}
+ return d
+     
 ## This code is left turned off, but might help visualize how pyexcel works with data sets.
 ## IP is the first column, whereas driver is the second column.
 ## mylistdict = [ {"IP": "172.16.2.10", "driver": "arista_eos"}] {"IP": "172.16.2.20", "driver": "arista_eos"} ]
