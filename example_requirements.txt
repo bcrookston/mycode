@@ -76,7 +76,7 @@ osc-lib==1.9.0
 oslo.config==8.0.2
 oslo.i18n==4.0.1
 oslo.serialization==2.24.0
-oslo.utils==3.35.0
+oslo.utils==4.10.1
 ovs==2.13.0
 PAM==0.4.2
 paramiko==2.7.1
